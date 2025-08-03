@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consola Simbiótica Web</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff7dee;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .chat-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      max-width: 80%;
+      padding: 10px 15px;
+      border-radius: 12px;
+      line-height: 1.4;
+    }
+
+    .user {
+      background-color: #333;
+      align-self: flex-end;
+      color: #fff;
+    }
+
+    .system {
+      background-color: #222;
+      align-self: flex-start;
+      color: #f7bfff;
+    }
+
+    form {
+      background-color: #1f1f1f;
+      display: flex;
+      padding: 15px;
+      border-top: 1px solid #333;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background-color: #ff7dee;
+      border: none;
+      padding: 10px 18px;
+      margin-left: 10px;
+      color: black;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>🧠 Consola Simbiótica Web</header>
+
+  <div class="chat-container">
+    {% if command %}
+      <div class="message user">{{ command }}</div>
+    {% endif %}
+
+    {% if output %}
+      <div class="message system">{{ output }}</div>
+    {% endif %}
+  </div>
+
+  <form method="post">
+    <input type="text" name="command" placeholder="Escribe un comando simbiótico..." autofocus autocomplete="off" />
+    <input type="submit" value="Invocar" />
+  </form>
+</body>
+</html>
