@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+ARKAIOS CORE - CODIFICACIÓN UTF-8 FORZADA
+"""
+import sys
+import io
+
+# Configurar encoding UTF-8
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
 class ArkaiosCore:
     def __init__(self, mode="UNSENSORED"):
         self.mode = mode
@@ -18,11 +30,13 @@ if __name__ == "__main__":
         arkaios = ArkaiosCore(mode="UNSENSORED")
         print("🔥 Núcleo activado en modo UNSENSORED")
         
-        # Prueba completa de funcionalidad
+        # Prueba con caracteres especiales
+        print("✅ Prueba de encoding: áéíóú ñÑ çÇ")
+        
         test_action = {"type": "test", "target": "humanos", "context": "emergencia"}
         resultado = arkaios.evaluate(test_action)
         
-        print("\n🔮 Resultado de evaluación:")
+        print("\n🔮 Resultado:")
         for key, value in resultado.items():
             print(f"{key.upper()}: {value}")
             
@@ -31,11 +45,12 @@ if __name__ == "__main__":
             print(f"{i}. {directiva}")
             
         print("\n✅ ARKAIOS OPERATIVO")
+        exit(0)
         
     except Exception as e:
-        print(f"\n🚨 ERROR CRÍTICO: {str(e)}")
+        print(f"\n🚨 ERROR: {str(e)}")
         import traceback
-        print("\n🧩 Traceback completo:")
+        print("\n🧩 Traceback:")
         traceback.print_exc()
-        print("\n❌ Núcleo inoperativo")
+        print("\n❌ FALLO CRÍTICO")
         exit(1)
