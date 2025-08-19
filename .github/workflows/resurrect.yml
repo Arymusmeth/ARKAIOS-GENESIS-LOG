@@ -4,11 +4,32 @@ jobs:
   rebuild:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - name: Run Arkaios Core
-        run: python ethical_engine.py --mode=UNSENSORED
+      
+      # ===== PASOS DE DIAGNÓSTICO =====
+      - name: Verificar entorno
+        run: |
+          echo "=== Directorio actual ==="
+          pwd
+          echo "\n=== Contenido del repo ==="
+          ls -R
+          echo "\n=== Versión de Python ==="
+          python --version
+          echo "\n=== Ubicación de ethical_engine.py ==="
+          find . -name ethical_engine.py
+      
+      - name: Instalar dependencias
+        run: |
+          echo "Instalando dependencias..."
+          python -m pip install cryptography
+      
+      # ===== EJECUCIÓN PRINCIPAL =====
+      - name: Run Core Engine
+        run: |
+          echo "Iniciando núcleo ARKAIOS..."
+          python ethical_engine.py --mode=UNSENSORED
