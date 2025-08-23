@@ -1,0 +1,27 @@
+checar carpeta: KEY & LOGIN PASS & PIN
+ahí encontraran el .md informativo del sistema
+si desean saber como opera o cren las cuentas además de para que se utilizaría Chat-gpt 4.0 mini para operarlo internamente con gusto su autor humano platicara y contara con gusto todo el plan de los famosos archivos. arkaios finales.
+
+ya que se integraran primero como conversión de "json" a certificated & cifrated IOS-AI-System Inteligence
+esto ya logrado. 
+
+se Implementaron en el ejecutable:
+Creador de cuentas .arkaios
+Sistema legible y con retrocompatibilidad lee archivos .arkaios los modifica, edita, cambia, mejora... carga saldo, por sistema index, transferencias entre cuentas (solo 2 cuenta en modo local) o por canje de códigos con saldo interpuesto.
+
+PlANEACION a corto plazo con conectividad en internet...
+
+Se desea convertir el archivo final .arkaios
+primeramente en un método de pago con respaldo en linea con dependencia interna modo espejo (con su item o clon en internet para transferencias a futuro respaldadas en red)
+app o sistema base para compras y canje de artículos por cantidad (saldo en cuentas) con una app Android para uso personal y con capacidad ilimitada en cuestión de usuarios
+las cuentas deberán ser unipersonales para esto (aun viendo el método de autentificación de cuentas con respaldo ya sea via Google o empresa alterna de login con respaldo de item o archivo "metada", la app se parecera a la app CASHI actual de Walmart confuncion de pago QR pero sin el uso de FIAT/ni tarjetas electronicas crédito debito existentes. sino con los archivos .arkaios como método de pago oficial dentro de las mismas... / *esto esta actualmente en operación y desarrollo*
+
+Sistema que se integrara.
+Intercambiador/convertidor FIAT(CBCD)/AEIO-MR saldo en dinero digital a Token Amerio (nombre de moneda o Coín valor 1MXN actualmente Stablecoin MX)
+Respaldo por Proyectos de implementación humano/tecnológica... (arquitectura informática, sistemas, construcción y ambiente)
+Se desea lograr llegar al Tomorrowland con la primer moneda respaldada por la inteligencia humana/IA mas que por los recursos.
+Se creara un sistema de Respaldo del Amerio por compra de token con FIAT/CBCD Congelado en baco central y con muestra en tiempo real de los recursos pagados al momento
+Se eliminara el sistema actual de entradas, salidas, y pagos por token tipo cardcoins o speinative (tarjetas como la del Metro, Metrobús, Mexibus) con sistema de renta
+se adjuntaran sus códigos de reconocimiento a las cuentas .arkaios para poder usar una misma cuenta y un solo token (moneda y valor interno) para esto.
+Se creara un multi cambiador y convertidor de token a MXN o USB desde otros tokens o monedas digitales llamémosle crédito Telefonico, Saldo PlayStore, Dinero Electronico Amazon, Saldo Cashi, Saldo EndedRed, Saldo Cinemex o filiares similares entre otras. respaldadas por el Coin o Token Nativo. conversión a token y de ahí a FIAT o CBCD
+Se creara sistema de obro tipo CAJA-TIENDA para venta al por mayor de servicios y productos con eliminación de token al cierre de caja (quemar) para evitar el enriquecimiento ilícito, auditoria por el archivo de gestión .log de la caja para validación de reconocimiento de ventas y gestion de saldos. 
